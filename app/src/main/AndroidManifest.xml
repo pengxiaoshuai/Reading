@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xms">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 访问Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.jiarui.ccniao.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".application.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 欢迎页 -->
+        <activity android:name=".ui.activity.WelcomeActivity" />
+        <!-- 主页 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 引导页 -->
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <!-- 自定义textview -->
+        <activity
+            android:name=".ui.activity.MySelfViewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主页 -->
+        <activity
+            android:name=".ui.activity.MySelfView_Volume"
+            android:screenOrientation="portrait" />
+        <!-- 自定义flowlayout -->
+        <activity
+            android:name=".ui.activity.FlowlayoutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 加载大图 -->
+        <activity
+            android:name=".ui.activity.LargeImageViewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 四个角都是方形的viewgroup -->
+        <activity
+            android:name=".ui.activity.SquareActivity"
+            android:screenOrientation="portrait" />
+        <!-- 折叠图片 -->
+        <activity
+            android:name=".ui.activity.MatrixPolyToPolyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- viewpager顶部栏跟着滑动的控件 -->
+        <activity
+            android:name=".ui.activity.ViewpagerTopBar"
+            android:screenOrientation="portrait" />
+        <!-- 测试事件分发 -->
+        <activity
+            android:name=".ui.activity.TestOntuchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 圆形图片 -->
+        <activity android:name=".ui.activity.RoundimageActivity" />
+        <!-- Retrofit的网络访问请求 -->
+        <activity android:name=".ui.activity.RetrofitActivity"></activity>
+        <activity android:name=".ui.activity.RxjavaActivity" />
+        <!-- Glide4.0的多种使用方式 -->
+        <activity android:name=".ui.activity.GlideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.ConstraintActivity"></activity>
+    </application>
+
+</manifest>

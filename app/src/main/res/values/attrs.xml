@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形imageview-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <!--viewpager下面的小圆点-->
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+    <!--无限轮播的viewpager-->
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <!--导航栏切换（左右滑动）-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+        <attr name="pstsTextSize" format="dimension" />
+    </declare-styleable>
+    <!--自定义控件-->
+        <declare-styleable name="myselfview">
+            <attr name="selfcolor" format="color|reference"/>
+            <attr name="selfsize" format="dimension"/>
+            <attr name="selfname" format="string"/>
+        </declare-styleable>
+        <!--自定义image-->
+        <!--<declare-styleable name="CustomImageview">-->
+            <!--<attr name="titletext" format="string"/>-->
+            <!--<attr name="titletextsize" format="dimension"/>-->
+            <!--<attr name="titletextcolor" format="color"/>-->
+            <!--<attr name="image" format="reference"/>-->
+            <!--<attr name="imageType">-->
+                <!--<enum name="fillXY" value="0"/>-->
+                <!--<enum name="center" value="1"/>-->
+            <!--</attr>-->
+        <!--</declare-styleable>-->
+    <!--张鸿洋的第三方控件-->
+    <attr name="titleText" format="string" />
+    <attr name="titleTextSize" format="dimension" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="image" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+        <!--圆环的自定义属性-->
+    <declare-styleable name="custom">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+        <!--我的圆环的自定义属性-->
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" format="color"></attr>
+        <attr name="secondColor" format="color"></attr>
+        <attr name="mywidth" format="dimension"></attr>
+        <attr name="speed" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Customvolume">
+        <attr name="firstColor0" format="color"/>
+        <attr name="secondColor0" format="color"/>
+        <attr name="cirwidth" format="dimension"/>
+        <attr name="dotCount" format="integer"/>
+        <attr name="splitSize" format="integer"/>
+        <attr name="bg" format="reference"/>
+    </declare-styleable>
+
+    <!--滑动字体变色控件自定义属性-->
+    <attr name="text" format="string"/>
+    <attr name="text_size" format="dimension"/>
+    <attr name="text_orgin_color" format="color|reference"/>
+    <attr name="text_change_color" format="color|reference"/>
+    <attr name="progress" format="float"/>
+    <attr name="direction">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="text"/>
+        <attr name="text_size"/>
+        <attr name="text_orgin_color"/>
+        <attr name="text_change_color"/>
+        <attr name="progress"/>
+        <attr name="direction"/>
+    </declare-styleable>
+
+    <!--自定义ViewPagerIndicator的实现-->
+    <declare-styleable name="ViewPagerTopItem">
+        <attr name="item_count" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="RoundImage">
+        <attr name="borderRadius" format="dimension">
+        </attr>
+        <attr name="type">
+            <enum name="circle" value="0">
+            </enum>
+            <enum name="round" value="1">
+            </enum>
+        </attr>
+    </declare-styleable>
+
+</resources>

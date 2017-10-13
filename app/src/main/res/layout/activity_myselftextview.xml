@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<com.xms.MySelfViewWidget.myselftextview-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/them_color"-->
+        <!--app:selfcolor="@color/red"-->
+        <!--android:padding="@dimen/dp10"-->
+        <!--app:selfname="9999"-->
+        <!--app:selfsize="40sp"/>-->
+    <!--<com.xms.MySelfViewWidget.CustomImageView-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_margin="@dimen/dp10"-->
+        <!--android:padding="@dimen/dp10"-->
+        <!--app:image="@mipmap/ic_launcher"-->
+        <!--app:titleText="你好啊"-->
+        <!--app:titleTextColor="@color/them_color"-->
+        <!--app:titleTextSize="20sp" />-->
+    <!--<com.xms.MySelfViewWidget.CustomImageView0-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--app:image="@mipmap/ic_launcher"-->
+        <!--android:padding="@dimen/dp10"-->
+        <!--app:titleText="你好"-->
+        <!--app:titleTextColor="@color/them_color"-->
+        <!--app:titleTextSize="20sp"/>-->
+
+
+        <com.xms.MySelfViewWidget.MyCustomProgress
+            android:id="@+id/mycustom"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:firstColor="@color/them_color"
+            app:secondColor="@color/red"
+            app:mywidth="20dp"
+            app:speed="10"/>
+
+
+
+</LinearLayout>
